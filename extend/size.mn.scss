@@ -1,0 +1,44 @@
+@import "../source/bootstrap";
+
+$mnRatio: 0.7;
+$mnEm: 0.75em;
+@function ratio($val, $ratio) {
+  @return $val * $ratio;
+}
+@function mnRatio($val) {
+  @return ratio($val, $mnRatio);
+}
+
+// accordion
+$accordion-padding-y-mn: mnRatio($accordion-padding-y);
+$accordion-padding-x-mn: mnRatio($accordion-padding-x);
+// alert
+$alert-padding-y-mn: mnRatio($alert-padding-y);
+$alert-padding-x-mn: mnRatio($alert-padding-x);
+$alert-margin-bottom-mn: mnRatio($alert-margin-bottom);
+// buttons
+$btn-padding-y-mn: mnRatio($btn-padding-y-sm);
+$btn-padding-x-mn: mnRatio($btn-padding-x-sm);
+$btn-font-size-mn: mnRatio($btn-font-size-sm);
+$btn-border-radius-mn: 0;
+// list group
+$list-group-item-padding-y-mn: mnRatio($list-group-item-padding-y);
+$list-group-item-padding-x-mn: mnRatio($list-group-item-padding-x);
+$list-group-item-font-size-mn: $mnEm;
+// modal
+$modal-header-padding-y-mn: 0.5rem;
+$modal-footer-padding-mn: 0.3rem;
+// nav & tabs
+$nav-link-padding-y-mn: mnRatio($nav-link-padding-y);
+$nav-link-font-size-mn: $mnEm;
+// form control
+$input-padding-y-mn: mnRatio($input-padding-y-sm);
+$input-padding-x-mn: mnRatio($input-padding-x-sm);
+$input-font-size-mn: mnRatio($input-font-size-sm);
+$input-border-radius-mn: 0;
+$input-height-mn: add($input-line-height * 1em, add($input-padding-y-mn * 2, $input-height-border, false));
+// select
+$form-select-padding-y-mn: mnRatio($form-select-padding-y-sm);
+$form-select-padding-x-mn: mnRatio($form-select-padding-x-sm);
+$form-select-font-size-mn: mnRatio($form-select-font-size-sm);
+$form-select-border-radius-mn: 0;

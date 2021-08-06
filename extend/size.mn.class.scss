@@ -1,0 +1,81 @@
+@import "./size.mn";
+// accordion
+.accordion-mn {
+  .accordion-button {
+    padding: $accordion-padding-y-mn $accordion-padding-x-mn;
+  }
+}
+// alert
+.alert-mn {
+  padding: $alert-padding-y-mn $alert-padding-x-mn;
+  margin-bottom: $alert-margin-bottom-mn;
+}
+// buttons
+.btn-mn, .btn-group-mn > .btn {
+  padding: $btn-padding-y-mn $btn-padding-x-mn;
+  @include font-size($btn-font-size-mn);
+  @include border-radius($btn-border-radius-mn);
+}
+// list group
+.list-group-mn {
+  .list-group-item {
+    padding: $list-group-item-padding-y-mn $list-group-item-padding-x-mn;
+    @include font-size($list-group-item-font-size-mn);
+  }
+}
+// modal
+.modal-mn {
+  .modal-header {
+    padding-top: $modal-header-padding-y-mn;
+    padding-bottom: $modal-header-padding-y-mn;
+  }
+  .modal-footer {
+    padding: $modal-footer-padding-mn;
+  }
+}
+// nav & tabs
+.nav-mn {
+  .nav-link {
+    padding: $nav-link-padding-y-mn $nav-link-padding-x;
+    @include font-size($nav-link-font-size-mn);
+  }
+}
+// form control
+.form-control-mn {
+  min-height: $input-height-mn;
+  padding: $input-padding-y-mn $input-padding-x-mn;
+  @include font-size($input-font-size-mn);
+  @include border-radius($input-border-radius-mn);
+
+  &::file-selector-button {
+    padding: $input-padding-y-mn $input-padding-x-mn;
+    margin: (-$input-padding-y-mn) (-$input-padding-x-mn);
+    margin-inline-end: $input-padding-x-mn;
+  }
+
+  &::-webkit-file-upload-button {
+    padding: $input-padding-y-mn $input-padding-x-mn;
+    margin: (-$input-padding-y-mn) (-$input-padding-x-mn);
+    margin-inline-end: $input-padding-x-mn;
+  }
+}
+// select
+.form-select-mn {
+  padding-top: $form-select-padding-y-mn;
+  padding-bottom: $form-select-padding-y-mn;
+  padding-left: $form-select-padding-x-mn;
+  @include font-size($form-select-font-size-mn);
+  @include border-radius($form-select-border-radius-mn);
+}
+// input group
+.input-group-mn > .form-control,
+.input-group-mn > .form-select,
+.input-group-mn > .input-group-text,
+.input-group-mn > .btn {
+  padding: $input-padding-y-mn $input-padding-x-mn;
+  @include font-size($input-font-size-mn);
+  @include border-radius($input-border-radius-mn);
+}
+.input-group-mn > .form-select {
+  padding-right: $form-select-padding-x + $form-select-indicator-padding;
+}
