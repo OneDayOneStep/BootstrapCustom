@@ -6,3 +6,4 @@ sass.render({ file: "./index.scss" }, (err, result) => {
         err && console.log("编译出错：" + err);
     });
 });
+console.log("编译完成");
